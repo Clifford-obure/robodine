@@ -5,7 +5,7 @@ import Orders from "./components/preorder/components/pages/Orders";
 // import Auth from "./components/auth/Auth/";
 import Login from "./components/auth/components/Login";
 import Register from "./components/auth/components/Register";
-import Landing from "./components/landing/landing";
+// import Landing from "./components/landing/landing";
 import Welcome from "./components/landing/components/Welcome";
 import Home from "./components/landing/components/Home";
 import Sidebar from "./components/landing/components/Sidebar";
@@ -26,7 +26,7 @@ function App() {
       <Router>
         <Routes>
           {/* home for the client */}
-          <Route path="/" element={<Landing />}>
+          <Route path="/" element={<Welcome />}>
             <Route index element={<Welcome />} />
             <Route path="home" element={<Home />} />
             <Route path="sidebar" element={<Sidebar />} />
