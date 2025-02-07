@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Preorder from "./components/preorder/Preorder";
 import Orders from "./components/preorder/components/pages/Orders";
-import Auth from "./components/auth/auth";
+// import Auth from "./components/auth/Auth/";
 import Login from "./components/auth/components/Login";
 import Register from "./components/auth/components/Register";
 import Landing from "./components/landing/landing";
@@ -32,7 +32,7 @@ function App() {
             <Route path="sidebar" element={<Sidebar />} />
           </Route>
           {/* authentication */}
-          <Route path="/auth" element={<Auth />}>
+          <Route path="/auth" element={<Login />}>
             <Route index element={<Login />} />
             <Route path="login" element={<Login />} />
             <Route path="register" element={<Register />} />
